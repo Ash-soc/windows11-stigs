@@ -3,7 +3,7 @@
 
 This folder covers **Windows 11 STIG control WN11-CC-000315**, which ensures that the Windows Installer feature **"Always install with elevated privileges"** is disabled. Disabling this setting prevents MSI installer packages from running with administrative permissions unless explicitly authorized.  
 
-> Tested on the Win11-VM01 sandbox environment.
+Tested on the Win11-VM01 sandbox environment.
 
 ---
 
@@ -20,13 +20,12 @@ This folder covers **Windows 11 STIG control WN11-CC-000315**, which ensures tha
 ## Description
 This control ensures that standard users cannot install MSI packages with elevated privileges. Disabling this feature is a simple but important part of hardening Windows 11 systems.  
 
-<details>
 <summary>Initial Compliance Scan Screenshot</summary>
 
-<img width="940" height="359" src="https://github.com/user-attachments/assets/f4970bf1-4bb9-47e9-8c5e-4840e1ee338a" alt="Initial Scan Screenshot" />
-
-*Screenshot from the initial Tenable.io scan in the lab environment.*
+Screenshot from the initial Tenable.io scan in the lab environment.*
 </details>
+
+<img width="944" height="361" alt="Screenshot 2026-01-22 210129" src="https://github.com/user-attachments/assets/1169fcb0-33dc-4238-af09-8e318d6ea91d" />
 
 ---
 
@@ -36,7 +35,7 @@ If this setting is enabled, standard users could install MSI packages with admin
 - Install malicious software  
 - Fully compromise the system  
 
-*During testing, unprivileged MSI packages could run if this setting was not disabled.*
+During testing, unprivileged MSI packages could run if this setting was not disabled.
 
 ---
 
@@ -62,12 +61,11 @@ This disables elevated MSI installations for all users.
 
 A follow-up STIG scan in Tenable.io confirmed that the setting is **remediated** and passes the control.
 
-<details>
 <summary>Passed Scan Screenshot</summary>
 
 <img width="1057" height="394" src="https://github.com/user-attachments/assets/eb2bc6d5-dc11-405e-92ee-4c3f79555872" alt="Passed Scan Screenshot" />
 
-*Confirms the registry change was applied successfully.*
+Confirms the registry change was applied successfully.
 
 </details>
 
@@ -84,5 +82,3 @@ A follow-up STIG scan in Tenable.io confirmed that the setting is **remediated**
 
 * All testing was performed in a controlled lab environment.
 * Screenshots reflect scan results from the test VM and may differ in other environments.
-
-```
