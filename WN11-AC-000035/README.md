@@ -1,12 +1,14 @@
 # WN11-AC-000035 – Minimum Password Length
 
-This folder documents the remediation of Windows 11 STIG control WN11-AC-000035.
+This folder documents the remediation of Windows 11 STIG control WN11-AC-000035, which enforces a minimum password length of 14 characters.
+
+**Test Environment:** Win11-VM01
 
 ---
 
 ## Description
 
-This control enforces a minimum password length of 14 characters.
+Longer passwords significantly increase resistance to brute-force and guessing attacks.
 
 ---
 
@@ -20,13 +22,13 @@ This control enforces a minimum password length of 14 characters.
 
 ## Risk / Impact
 
-Short passwords are easier to crack and increase the likelihood of account compromise.
+Short passwords are easier to crack and increase the likelihood of unauthorised access to user accounts.
 
 ---
 
 ## Remediation
 
-Minimum password length was set to 14 characters.
+Minimum password length was configured to 14 characters.
 
 ---
 
@@ -40,10 +42,10 @@ Minimum password length was set to 14 characters.
 
 ## SOC Interview Explanation
 
-Longer passwords significantly increase resistance to brute-force attacks.
+“Longer passwords increase the time and resources required for brute-force attacks, reducing successful compromises.”
 
 ---
 
 ## References
 
-DISA STIG Viewer – Windows 11 STIG
+- DISA STIG Viewer – Windows 11 STIG
