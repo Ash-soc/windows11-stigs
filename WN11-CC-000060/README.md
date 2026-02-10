@@ -109,7 +109,7 @@ Event ID 4625 includes key forensic details such as:
 
 ---
 
-"Failed logon auditing is one of the most important early detection controls in a SOC. Event ID 4625 allows analysts to detect brute-force attempts, password spraying campaigns, and suspicious authentication patterns. Without this visibility, attackers can attempt credential abuse with minimal detection risk."
+> "Failed logon auditing is one of the most important early detection controls in a SOC. Event ID 4625 allows analysts to detect brute-force attempts, password spraying campaigns, and suspicious authentication patterns. Without this visibility, attackers can attempt credential abuse with minimal detection risk."
 
 ---
 
