@@ -8,7 +8,7 @@ $RequiredValue = 5
 Write-Host "Checking current LAN Manager authentication level..." -ForegroundColor Cyan
 
 # Check current value
-$currentValue = (Get-ItemProperty -Path $RegistryPath -Name $ValueName -ErrorAction SilentlyContinue).LmCompatibilityLevel
+$currentValue = (Get-ItemProperty -Path $RegistryPath -Name $PropertyName -ErrorAction SilentlyContinue).LmCompatibilityLevel
 
 if ($currentValue -eq $RequiredValue) {
     Write-Host "System is already compliant (LmCompatibilityLevel = 5)." -ForegroundColor Green
@@ -26,5 +26,5 @@ else {
 }
 
 # Final validation
-$updatedValue = (Get-ItemProperty -Path $RegistryPath -Name $ValueName).LmCompatibilityLevel
+$updatedValue = (Get-ItemProperty -Path $RegistryPath -Name $PropertyName).LmCompatibilityLevel
 Write-Host "Current LmCompatibilityLevel:" $updatedValue -ForegroundColor Cyan
